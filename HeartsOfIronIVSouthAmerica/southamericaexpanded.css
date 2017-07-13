@@ -1,0 +1,70 @@
+/*Mainpage*/
+*{
+    margin:0;
+    padding:0;
+}
+html{
+    background-image:url("images/saebackground.jpg");
+    background-attachment: fixed;
+    background-size: 100%;
+}
+#wrap{
+    width:60%;
+    height:100%;
+    margin:0 auto;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius:25px;
+    padding:25px;
+}
+/*Navigation bar*/
+#navbar{
+    width:1350px;
+    height:80px;
+    margin:0 auto;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius:25px;
+}
+.navbut{
+    width:150px;
+    height:50px;
+    background-color: rgba(0, 0, 0, 0.6);
+    float:left;
+    margin-left:37.5px;
+    margin-right:37.5px;
+    margin-top:15px;
+    border-radius:25px;
+    text-align: center;
+}
+.navlink{
+    color: whitesmoke;
+}
+.navbut:hover{
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2);
+    transition: All 1.0s ease;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.navtext{
+    margin-top:10px;
+}
+/*Content TEXT*/
+#countrydescarg{
+    width:1200px;
+    margin-left:100px;
+    text-align: justify;
+}
+.paragraph{
+    width:1200px;
+}
+h2{
+    margin-bottom:20px;
+    margin-top:20px;
+}
+/*Logo*/
+#logo{
+    background-image: url("images/SAELOGO.png");
+    height:250px;
+    width:250px;
+    background-attachment: scroll;
+    float:left;
+}
