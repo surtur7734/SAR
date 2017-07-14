@@ -1,0 +1,88 @@
+focus_tree = {
+id = argentinefocus
+country = {
+factor=0
+modifier = {
+add = 10
+tag = ARG
+}
+}
+default = no
+#Custom focuses start here
+#Focus for - Political Effort
+focus = {
+id =politicaleffort
+icon =GFX_goal_generic_demand_territory
+bypass = {}
+ai_will_do = { factor = }
+x =2
+y =0
+mutually_exclusive = { }
+prerequisite = { }
+available = {  }
+cost = 10 
+ available_if_capitulated = yes 
+completion_reward = {
+
+					add_political_power = 120
+}
+}
+#Focus for - Argentine Nationalism
+focus = {
+id =argentinenationalism
+icon =GFX_goal_generic_support_fascism
+bypass = {}
+ai_will_do = { factor = }
+x =1
+y =1
+mutually_exclusive = { }
+prerequisite = { focus = politicaleffort}
+available = {  }
+cost = 10 
+ available_if_capitulated = yes 
+completion_reward = {
+add_ideas = nationalism
+
+}
+}
+#Focus for - Pressure Paraguay
+focus = {
+id =pressureparaguay
+icon =GFX_goal_generic_forceful_treaty
+bypass = {}
+ai_will_do = { factor = }
+x =0
+y =2
+mutually_exclusive = { }
+prerequisite = { focus = argentinenationalism}
+available = {  }
+cost = 10 
+ available_if_capitulated = yes 
+completion_reward = {
+add_state_core = 301
+add_state_claim = 688
+
+
+}
+}
+#Focus for - Annex Paraguay
+focus = {
+id =annexparaguay
+icon =GFX_goal_demand_sudetenland
+bypass = {}
+ai_will_do = { factor = }
+x =2
+y =2
+mutually_exclusive = { focus = pressureparaguay}
+prerequisite = { focus = argentinenationalism}
+available = {  }
+cost = 10 
+ available_if_capitulated = yes 
+completion_reward = {
+annex_country  = { target = PAR }
+add_state_core = 301
+add_state_claim = 688
+}
+}
+#end
+}
