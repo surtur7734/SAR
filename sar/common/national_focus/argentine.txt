@@ -1,0 +1,153 @@
+focus_tree = {
+id = argentine
+country = {
+factor=0
+modifier = {
+add = 10
+tag = ARG
+}
+}
+default = no
+#Custom focuses start here
+#Focus for - Political_Effort
+focus = {
+id =political_effort
+icon =GFX_goal_generic_demand_territory
+bypass = {}
+ai_will_do = { factor = }
+x =2
+y =0
+mutually_exclusive = { }
+prerequisite = { }
+available = {  }
+cost = 10 
+ available_if_capitulated = yes 
+completion_reward = {
+
+					add_political_power = 120
+}
+}
+#Focus for - Argentine_Nationalism
+focus = {
+id =argentine_nationalism
+icon =GFX_goal_generic_support_fascism
+bypass = {}
+ai_will_do = { factor = }
+x =2
+y =1
+mutually_exclusive = { }
+prerequisite = { focus = political_effort}
+available = {  }
+cost = 10 
+ available_if_capitulated = yes 
+completion_reward = {
+add_ideas = nationalism
+
+}
+}
+#Focus for - Pressure_Paraguay
+focus = {
+id =pressure_paraguay
+icon =GFX_goal_generic_territory_or_war
+bypass = {}
+ai_will_do = { factor = 50}
+x =1
+y =2
+mutually_exclusive = { focus = communist_intervention}
+prerequisite = { focus = argentine_nationalism}
+available = {  }
+cost = 10 
+ available_if_capitulated = yes 
+completion_reward = {
+add_state_claim = 301
+add_state_core = 688
+transfer_state = 688
+puppet = PAR
+}
+}
+#Focus for - Old_Border_Disputes
+focus = {
+id =old_border_disputes
+icon =GFX_focus_SAF_colonialist_crusade
+bypass = {}
+ai_will_do = { factor = 50}
+x =1
+y =3
+mutually_exclusive = { }
+prerequisite = { focus = communist_intervention  focus = pressure_paraguay}
+available = {  }
+cost = 10 
+ available_if_capitulated = yes 
+completion_reward = {
+add_state_core = 507
+transfer_state = 507
+
+}
+}
+#Focus for - Fate_of_Chile
+focus = {
+id =fate_of_chile
+icon =GFX_goal_generic_occypy_states_ongoing_war
+bypass = {}
+ai_will_do = { factor = 50}
+x =1
+y =4
+mutually_exclusive = { }
+prerequisite = { focus = old_border_disputes}
+available = {  }
+cost = 10 
+ available_if_capitulated = yes 
+completion_reward = {
+create_wargoal = { 
+type = annex_everything 
+target = CHL
+}
+}
+}
+#Focus for - Communist_Intervention
+focus = {
+id =communist_intervention
+icon =GFX_goal_generic_war_with_comintern
+bypass = {}
+ai_will_do = { factor = 50}
+x =3
+y =2
+mutually_exclusive = { focus = pressure_paraguay}
+prerequisite = { focus = argentine_nationalism}
+available = {  }
+cost = 10 
+ available_if_capitulated = yes 
+completion_reward = {
+
+add_state_claim = 301
+add_state_core = 688
+create_wargoal = { 
+type = annex_everything 
+target = PAR
+}
+
+}
+}
+#Focus for - Steel Works
+focus = {
+id =steelworks
+icon =GFX_goal_generic_construct_civ_factory
+bypass = {}
+ai_will_do = { factor = 50}
+x =4
+y =0
+mutually_exclusive = { }
+prerequisite = { focus = industruilisation_i}
+available = {  }
+cost = 10 
+ available_if_capitulated = yes 
+completion_reward = {
+add_resource= { 
+type = steel 
+amount = 14
+state = 278 
+}
+}
+}
+#end
+}
