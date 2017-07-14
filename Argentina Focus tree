@@ -1,15 +1,20 @@
 # Argentina Focus tree
 
+Argentina = ARG
+
 * Annexation Focuses line
 
-- Annexation against Chile With cores on Lower chile (Claims) <More then 200k in the field>
+** Choose Facist diplomacy
 - <Pressure paraguay> Gian one core province in paraguay(mutually exclusive)
-- Annexation or puppet goal on paraquay
+- Annexation or puppet goal on paraquay <Sets claim on Chaco Boreal, >
+--- Annexation 
+- Annexation against Chile With core on Magallanes ID = 507 (Claims) <More then 200k in the field>
+
 
 
 * Industrial focuses
 
-- Argentina Workers party (Adds 2 civilian factorys in <Pampas ID= 278>)
-- Argentina Zanella Motorworks (Adds 4 civilian factorys in <Pampas ID= 278>)
+- Argentina Labor party (Adds 1 civilian factorys in <Mendoza ID= 511>)
+- Argentina Zanella Motorworks (Adds 2 civilian factorys in <Pampas ID= 278>)
 - argentina metal works | (Adds 12 steel to Mesopotamia ID=510)
 - Argentina
