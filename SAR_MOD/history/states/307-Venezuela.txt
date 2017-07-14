@@ -8,6 +8,7 @@ state={
 	manpower = 1385010
 	resources={
 		oil=58
+		aluminum=16
 	}
 
 	history={
