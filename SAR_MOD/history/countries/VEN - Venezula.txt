@@ -60,28 +60,27 @@ set_country_flag = monroe_doctrine
 	}
 }
 
-set_convoys = 10
+set_convoys = 50
 set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 5
+			popularity = 20
 		}
 
 		fascism = {
-			popularity = 80
+			popularity = 30
 		}
-		
-		communism = {
-			popularity = 15
-			#banned = no #default is no
+
+		neutrality ={
+			popularity = 50
 		}
 	}
 	
-	ruling_party = fascism
-	last_election = "1936.1.1"
-	election_frequency = 48
-	elections_allowed = no
+	ruling_party = neutrality
+	last_election = "1933.1.1"
+	election_frequency = 60
+	elections_allowed = yes
 }
 
 create_country_leader = {
@@ -104,6 +103,13 @@ create_country_leader = {
 	traits = {
 		#
 	}
+}
+
+create_country_leader = {
+	name = "Romulo Betancourt"
+	picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
+	expire = "1965.1.1"
+	idealogy = liberalism
 }
 
 1939.1.1 = {
