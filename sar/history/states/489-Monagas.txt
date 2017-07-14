@@ -2,7 +2,7 @@
 state={
 	id=489
 	name="STATE_489" # Zulia
-	manpower = 1646373
+	manpower = 1846373
 	
 	state_category = town
 	

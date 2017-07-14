@@ -3,9 +3,9 @@ state={
 	id=307
 	name="STATE_307" # Miranda
 	
-	state_category = city
+	state_category = large_city
 	
-	manpower = 1385010
+	manpower = 1585010
 	resources={
 		oil=58
 		aluminium=16
@@ -18,7 +18,7 @@ state={
 			arms_factory = 2
 			industrial_complex = 5
 			air_base = 2
-			naval_dockyard = 1
+			dockyard = 1
 			8113 = {
 				naval_base = 3
 			}
