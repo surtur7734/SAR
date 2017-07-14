@@ -9,12 +9,33 @@ tag = ARG
 }
 default = no
 #Custom focuses start here
-#Focus for - Political_Effort
+#Focus for - Steel Works
 focus = {
-id =political_effort
+id =steelworks
+icon =GFX_goal_generic_construct_civ_factory
+bypass = {}
+ai_will_do = { factor = 50}
+x =4
+y =0
+mutually_exclusive = { }
+prerequisite = { }
+available = {  }
+cost = 10 
+ available_if_capitulated = yes 
+completion_reward = {
+add_resource= { 
+type = steel 
+amount = 14
+state = 278 
+}
+}
+}
+#Focus for - Reform Politics
+focus = {
+id =reformpolitics
 icon =GFX_goal_generic_demand_territory
 bypass = {}
-ai_will_do = { factor = }
+ai_will_do = { factor = 50}
 x =2
 y =0
 mutually_exclusive = { }
@@ -23,20 +44,19 @@ available = {  }
 cost = 10 
  available_if_capitulated = yes 
 completion_reward = {
-
-					add_political_power = 120
+add_political_power = 120
 }
 }
-#Focus for - Argentine_Nationalism
+#Focus for - Argentine Nationalism
 focus = {
-id =argentine_nationalism
-icon =GFX_goal_generic_support_fascism
+id =argentinenationalism
+icon =GFX_goal_support_fascism
 bypass = {}
-ai_will_do = { factor = }
+ai_will_do = { factor = 50}
 x =2
 y =1
 mutually_exclusive = { }
-prerequisite = { focus = political_effort}
+prerequisite = { }
 available = {  }
 cost = 10 
  available_if_capitulated = yes 
@@ -45,55 +65,16 @@ add_ideas = nationalism
 
 }
 }
-#Focus for - Pressure_Paraguay
+#Focus for - Fate of Chile
 focus = {
-id =pressure_paraguay
-icon =GFX_goal_generic_territory_or_war
-bypass = {}
-ai_will_do = { factor = 50}
-x =1
-y =2
-mutually_exclusive = { focus = communist_intervention}
-prerequisite = { focus = argentine_nationalism}
-available = {  }
-cost = 10 
- available_if_capitulated = yes 
-completion_reward = {
-add_state_claim = 301
-add_state_core = 688
-transfer_state = 688
-puppet = PAR
-}
-}
-#Focus for - Old_Border_Disputes
-focus = {
-id =old_border_disputes
-icon =GFX_focus_SAF_colonialist_crusade
-bypass = {}
-ai_will_do = { factor = 50}
-x =1
-y =3
-mutually_exclusive = { }
-prerequisite = { focus = communist_intervention  focus = pressure_paraguay}
-available = {  }
-cost = 10 
- available_if_capitulated = yes 
-completion_reward = {
-add_state_core = 507
-transfer_state = 507
-
-}
-}
-#Focus for - Fate_of_Chile
-focus = {
-id =fate_of_chile
+id =fateofchile
 icon =GFX_goal_generic_occypy_states_ongoing_war
 bypass = {}
 ai_will_do = { factor = 50}
 x =1
 y =4
 mutually_exclusive = { }
-prerequisite = { focus = old_border_disputes}
+prerequisite = { focus = oldborderdisputes}
 available = {  }
 cost = 10 
  available_if_capitulated = yes 
@@ -104,16 +85,16 @@ target = CHL
 }
 }
 }
-#Focus for - Communist_Intervention
+#Focus for - Communist Intervention
 focus = {
-id =communist_intervention
+id =communistintervention
 icon =GFX_goal_generic_war_with_comintern
 bypass = {}
 ai_will_do = { factor = 50}
 x =3
 y =2
-mutually_exclusive = { focus = pressure_paraguay}
-prerequisite = { focus = argentine_nationalism}
+mutually_exclusive = { focus = pressureparaguay}
+prerequisite = { focus = argentinenationalism}
 available = {  }
 cost = 10 
  available_if_capitulated = yes 
@@ -128,25 +109,43 @@ target = PAR
 
 }
 }
-#Focus for - Steel Works
+#Focus for - Pressure Paraguay
 focus = {
-id =steelworks
-icon =GFX_goal_generic_construct_civ_factory
+id =pressureparaguay
+icon =GFX_goal_generic_territory_or_war
 bypass = {}
 ai_will_do = { factor = 50}
-x =4
-y =0
-mutually_exclusive = { }
-prerequisite = { focus = industruilisation_i}
+x =1
+y =2
+mutually_exclusive = { focus = communistintervention}
+prerequisite = { focus = argentinenationalism}
 available = {  }
 cost = 10 
  available_if_capitulated = yes 
 completion_reward = {
-add_resource= { 
-type = steel 
-amount = 14
-state = 278 
+add_state_claim = 301
+add_state_core = 688
+transfer_state = 688
+puppet = PAR
 }
+}
+#Focus for - Old Border Disputes
+focus = {
+id =oldborderdisputes
+icon =GFX_goal_tripartite_pact
+bypass = {}
+ai_will_do = { factor = 50}
+x =1
+y =3
+mutually_exclusive = { }
+prerequisite = { focus = pressureparaguay  focus = communistintervention}
+available = {  }
+cost = 10 
+ available_if_capitulated = yes 
+completion_reward = {
+add_state_core = 507
+transfer_state = 507
+
 }
 }
 #end
