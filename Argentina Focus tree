@@ -1,20 +1,37 @@
 # Argentina Focus tree
 
 Argentina = ARG
-
-* Annexation Focuses line
+################################################################################
+* Diplomacy tree
 
 ** Choose Facist diplomacy
-- <Pressure paraguay> Gian one core province in paraguay(mutually exclusive)
-- Annexation or puppet goal on paraquay <Sets claim on Chaco Boreal, >
---- Annexation 
+* Improve Relations with Venezuela <+ 100 + Non agression pact>
+--- <Pressure paraguay> Gian core province in paraguay
+    (Paraguay was once part of the spanish empire its time to regain the territory lost in the wars)
+    -- Puppet Paraguay <Takes core province of paraguay puppets Chaco Boreal> 
+          (They where once part of the spanish empire But are still usefull as an ally to us)
+    -- Annex Whole Paraguay<Gians core on paraguay, Gians claim on Chaco Boreal + Wargoal>
+    
 - Annexation against Chile With core on Magallanes ID = 507 (Claims) <More then 200k in the field>
+-- Quick intervention Bolivia <Gians annex wargoal on Bolivia>
+        (We cannot pass the fact that communist presserve great danger to our nation and we must intervene at once!)
+
+** Choose Democratic diplomacy
+- Improve relations with paraguay <+100 relation>
+- Improve relations with Chile <+25 relation>
+- Improve relations with the giant <Brazil opinion of argentina + 50>
+-- Pact with the devil <Improve relations with bolivia + 100 + Non agression pact>
 
 
+################################################################################
 
 * Industrial focuses
 
 - Argentina Labor party (Adds 1 civilian factorys in <Mendoza ID= 511>)
 - Argentina Zanella Motorworks (Adds 2 civilian factorys in <Pampas ID= 278>)
 - argentina metal works | (Adds 12 steel to Mesopotamia ID=510)
-- Argentina
+- Argentine Petroleum Institute (Adds 10 oil and 2 rubber to Chaco Austral ID=509)
+- Argentina Military 
+
+
+Viceroyalty of the Río de la Plata restore spanish empire
