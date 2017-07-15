@@ -1,0 +1,75 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 15-jul-2017, 14:47:04
+    Author     : Kevin
+*/
+html, body {
+    color: white;
+    background-color: #404040;
+}
+.container{
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.navbar {
+    color: white;
+    border-radius: 0px;
+    background-color: #404040;
+    border-width: 0px;
+}
+.navbar-inverse .navbar-brand {
+    color: white;
+}
+.navbar-brand {
+    padding-right: 35px;
+}
+
+.navbar-nav li a:hover {
+    border-bottom-color: white;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+}
+.navbar-nav li a {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.navbar-nav li a:hover {
+    border-bottom-color: white;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    background-color: #444444;
+}
+
+.navbar-inverse .navbar-nav  .active  a {
+    background-color: transparent;
+    border-bottom-color: white;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.navbar-inverse .navbar-nav > .active > a:hover {
+    background-color: transparent;
+}
+.site-wrapper {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.jumbotron {
+    background-image: url("images/saebackground.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+.jumbotron .container{
+    background-image: url("images/SAELOGO.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+}
