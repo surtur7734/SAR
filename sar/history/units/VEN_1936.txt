@@ -1,0 +1,161 @@
+﻿division_template = {
+	name = "División de Infanteria"	
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		artillery_brigade = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		artillery_brigade = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+	}
+}
+division_template = {
+	name = "División de Caballería"  
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+		cavalry = { x = 0 y = 4 }
+	}
+}
+
+units = {
+	##### Alto Mando de Venezuela #####
+	division= {	
+		name = " La Primera División de Infanteria"
+		location = 8113 # Caracas
+		division_template = "División de Infanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	division= {	
+		name = "La Segunda División de Infanteria"
+		location = 8113 # Caracas
+		division_template = "División de Infanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	division= {	
+		name = "La Tercera División de Infanteria"
+		location = 8113 # Caracas
+		division_template = "División de Infanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	division= {	
+		name = "La Cuarta División de Infanteria"
+		location = 8113 # Caracas
+		division_template = "División de Infanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	division= {	
+		name = "La Quinta División de Infanteria"
+		location = 8113 # Caracas
+		division_template = "División de Infanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	division= {	
+		name = "La Sexta División de Infanteria"
+		location = 8113 # Caracas
+		division_template = "División de Infanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	division= {	
+		name = "La Séptima División de Infanteria"
+		location = 8113 # Caracas
+		division_template = "División de Infanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	division= {	
+		name = "La Ocha División de Infanteria"
+		location = 8113 # Caracas
+		division_template = "División de Infanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	division= {	
+		name = "La Novena División de Infanteria"
+		location = 8113 # Caracas
+		division_template = "División de Infanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	division= {	
+		name = "La Primera División de Caballería"
+		location = 8113 # Caracas
+		division_template = "División de Caballería"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	division= {	
+		name = "La Segunda División de Caballería"
+		location = 8113 # Caracas
+		division_template = "División de Caballería"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	division= {	
+		name = "La Tercera División de Caballería"
+		location = 8113 # Caracas
+		division_template = "División de Caballería"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+
+	##### NAVY #####
+	navy = {
+		name = "Armada Bolivariana de Venezuela"
+		base = 	10912
+		location = 10912  
+		ship = { name = "Kariña" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = VEN } } }
+		ship = { name = "Naiguata" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = VEN } } }
+		ship = { name = "Yavire" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = VEN } } }
+		ship = { name = "Warao" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = VEN } } }
+		ship = { name = "Tamanaco" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = VEN } } }
+	}
+}
+
+##### No notable air forces #####
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "VEN"
+		}
+		requested_factories = 2
+		progress = 0.89
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "VEN"
+		}
+		requested_factories = 1
+		progress = 0.89
+		efficiency = 100
+	}
+}

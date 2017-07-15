@@ -1,0 +1,25 @@
+
+state={
+	id=488
+	name="STATE_488"
+	manpower = 445642
+	resources={
+		steel=12
+	}
+	
+	state_category = town
+
+	history={
+		owner = VEN
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+
+		}
+		add_core_of = VEN
+	}
+
+	provinces={
+		1981 5317 7915 8050 10736 10849 10879 
+	}
+}

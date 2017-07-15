@@ -1,0 +1,17 @@
+Venezuela
+
+Parties:
+- Democrats	:	20% - Acción Democrática
+- Fascists	:	30% - Grupo Regional de Venezuela del Partido Nazi
+- Neutral	:	50%	- Movimiento Progresista de Venezuela
+
+ VEN_fascism_party:0 "GRVPN"
+ VEN_fascism_party_long:0 "Grupo Regional de Venezuela del Partido Nazi"
+ VEN_neutral_party:0 "MPV"
+ VEN_neutral_party_long:0 "Movimiento Progresista de Venezuela"
+ VEN_democratic_party:0 "AD"
+ VEN_democratic_party_long:0 "Acción Democrática"
+ VEN_communism_party:0 "PCV"
+ VEN_communism_party_long:0 "Partido Comunista de Venezuela"
+
+Resources per Province:
