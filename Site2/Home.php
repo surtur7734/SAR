@@ -19,25 +19,27 @@ and open the template in the editor.
         <title>Home</title>
     </head>
     <body>
-        <div class="site-wrapper">
-            <nav id="NavBarID" class="navbar navbar-inverse">
-                <div class="container">
-                    <div class="navbar-header">
-                        <a class="navbar-brand" href="Home.php">SAR</a>
-                    </div>
-                    <div class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav">
-                            <li class="active"><a href="Home.php">Home</a></li>
-                            <li><a href="about.php">About</a></li>
-                        </ul>
-                    </div>
+        <nav id="NavBarID" class="navbar navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="Home.php">SAR</a>
                 </div>
-            </nav>
-        </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="Home.php">Home</a></li>
+                        <li><a href="about.php">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <div class="jumbotron">
-            <div class="container"></div>
+            <div class="container">
+                <img src="images/SAELOGO.png" alt="LOGO">
+                <h1>South America</h1>
+                <h1>reworked</h1>
+            </div>
         </div>
-        <div class="container">
+        <div id="MainContainer" class="container">
             <div class="row">
                 <div class="col-md-8">
                     <h2>Argentina</h2>
@@ -47,5 +49,11 @@ and open the template in the editor.
                 </div>
             </div>
         </div>
+        
+        <footer class="bs-docs-footer">
+            <div class="container">
+                <h3>Hellos</h3>
+            </div>
+        </footer>
     </body>
 </html>
